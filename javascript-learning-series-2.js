@@ -73,3 +73,57 @@ console.log(str1.replace("h","H"));
 let ab="@";
 let bc=user.length;
 console.log(ab.concat(user).concat(bc));
+
+
+//Array
+
+let studentmarks=[85,96,79,45,95];
+for(let i=0;i<=studentmarks.length;i++){
+    console.log(studentmarks[i]);
+}
+
+for(let i of studentmarks){
+    console.log(i);
+}
+
+//practice-01
+let avgmarks=0;
+
+for(let i of studentmarks){
+    avgmarks=avgmarks+i;
+}
+
+console.log(avgmarks/studentmarks.length);
+
+//practice-02  10% discount
+
+let itemprice = [250, 450, 670, 500];
+
+for (let i = 0; i < itemprice.length; i++) {
+    itemprice[i] = itemprice[i] - (itemprice[i] * 0.1);
+}
+
+console.log(itemprice);
+
+
+//methods in arrays
+
+let heros=["iron man","hulk","spider man"];
+
+let heroine=["wonder women","mulana"];
+
+console.log(heros.push("thor"));
+console.log(heros.pop());
+console.log(heros.toString());
+
+console.log(heros.concat(heroine));
+
+console.log(heros.unshift("antman"));
+
+console.log(heroine.shift());
+
+let arr=[1,2,3,4,5,6,7];
+
+console.log(arr.slice(2,5));
+
+console.log(arr.splice(2,0,101));
