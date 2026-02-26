@@ -70,4 +70,18 @@ let reducearr=arr.reduce((accumulator,element)=>{
 }
 );
 console.log(reducearr);
+let light=true;
+let btn=document.querySelector("#backgroundcolor");
+btn.addEventListener("click",()=>{
+    if(light){
+        document.body.classList.add("light-mode");
+        document.body.classList.remove("dark-mode");
+        light=false;
+    }else{
+        document.body.classList.add("dark-mode");
+        document.body.classList.remove("light-mode");
+        light=true;
+    }
+});
+
     
